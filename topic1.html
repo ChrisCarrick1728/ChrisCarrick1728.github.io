@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chris Carrick CIT - 261 Portfolio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header>
+      <h1>Chris Carrick – CIT 261 Porfolio</h1>
+    </header>
+    <section id="list">
+      <h2>Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays</h2>
+      <p>Note: To see the code in acton, please open your console.</p>
+      <h3>Loops:</h3>
+
+      <div class="codeSection">
+        <h4><code>for</code> Loop:</h4>
+        <p>Also demonstrates <code>functions</code> & <code>variables</code></p>
+        <pre>
+function runForLoop() {
+  console.log("Function runForLoop()")
+  for (var i = 0; i < 10; i++) {
+    console.log("I = " + i)
+  }
+}</pre>
+        <button type="button" onclick="runForLoop()">Click to run Code:</button>
+        <div id="for_loop_output" class="output">
+          <!-- Intentionally left blank -->
+        </div>
+      </div>
+      
+      <div class="codeSection">
+      <h4><code>while</code> Loop:</h4>
+      <p>Also demonstrates <code>functions</code> & <code>variables</code></p>
+      <pre>
+function runWhileLoop() {
+  console.log("Function runWhileLoop()")
+  var i = 0;
+  while (i < 10) {
+    console.log("I = " + i++)
+  }
+}</pre>
+        <button type="button" onclick="runWhileLoop()">Click to run Code:</button>
+        <div id="while_loop_output" class="output">
+          <!-- Intentionally left blank -->
+        </div>
+      </div>
+
+      <div class="codeSection">
+        <h4>Advanced Loop: <code>break</code> & <code>continue</code></h4>
+        <p>Also demonstrates <code>functions</code> & <code>variables</code></p>
+        <pre>
+function advancedLoops() {
+  console.log("Function advancedLoops()")
+  var exitLoop = false
+  while (true) {
+    exitLoop = confirm("You are in a loop. Click 'Ok' to exit")
+    console.log(exitLoop)
+    if (!exitLoop) {
+      console.log("'Ok' NOT clicked")
+      continue
+    }
+    console.log("'Ok' Clicked. Exiting Loop")
+    break
+  }
+}</pre>
+        <button type="button" onclick="advancedLoops()">Click to run Code:</button>
+        <div id="advanced_loop_output" class="output">
+          <!-- Intentionally left blank -->
+        </div>
+      </div>
+
+      <h3>Conditional Statements:</h3>
+
+      <div class="codeSection">
+        <h4><code>if</code> Statements:</h4>
+        <p>Also demonstrates <code>functions</code> & <code>parameters</code></p>
+        <pre>
+function runIfStatement(condition) {
+  console.log('Function runIfStatement(condition)')
+  if (condition == true) {
+    console.log('do something because condition is true')
+  }  
+  console.log('do something regardless of if condition is true')
+}</pre>
+        <button type="button" onclick="runIfStatement(true)">Click to run Code (pass true as parameter):</button>
+        <button type="button" onclick="runIfStatement(false)">Click to run Code (pass false as parameter):</button>
+        <div id="for_loop_output" class="output">
+          <!-- Intentionally left blank -->
+        </div>
+      </div>
+
+      <div class="codeSection">
+        <h4><code>if</code> & <code>else</code> Statements:</h4>
+        <p>Also demonstrates <code>functions</code> & <code>parameters</code></p>
+        <pre>
+function runIfElseStatement(condition) {
+  console.log('Function runIfElseStatement(condition)')
+  if (condition == true) {
+    console.log('do something because condition is true')
+  } else { 
+    console.log('do something because condition is false')
+  }
+}</pre>
+        <button type="button" onclick="runIfElseStatement(true)">Click to run Code (pass true as parameter):</button>
+        <button type="button" onclick="runIfElseStatement(false)">Click to run Code (pass false as parameter):</button>
+        <div id="for_loop_output" class="output">
+          <!-- Intentionally left blank -->
+        </div>
+      </div>
+
+      <div class="codeSection">
+        <h4><code>if</code> , <code>else if</code> & <code>else</code> Statements:</h4>
+        <p>Also demonstrates <code>functions</code> & <code>parameters</code></p>
+        <pre>
+function runIfElseIfElseStatement(name) {
+  console.log('Function runIfElseIfElseStatement(name)')
+  if (name == 'chris') {
+    console.log(name + ' is the Dad.')
+  } else if (name == 'lindsay') { 
+    console.log(name + ' is the Mom.')
+  } else if (name == 'andy') {
+    console.log(name + ' is the Son.')
+  } else {
+    console.log('I don\'t know who ' + name + ' is.')
+  }
+}</pre>
+        <button type="button" onclick="runIfElseIfElseStatement('chris')">Click to run Code (pass 'chris' as parameter):</button>
+        <button type="button" onclick="runIfElseIfElseStatement('andy')">Click to run Code (pass 'andy' as parameter):</button>
+        <button type="button" onclick="runIfElseIfElseStatement('lindsay')">Click to run Code (pass 'lindsay' as parameter):</button>
+        <button type="button" onclick="runIfElseIfElseStatement('somebody')">Click to run Code (pass 'somebody' as parameter):</button>
+        <div id="for_loop_output" class="output">
+          <!-- Intentionally left blank -->
+        </div>
+      </div>
+
+      <div class="codeSection">
+        <h4><code>switch</code> Statements:</h4>
+        <p>Also demonstrates <code>functions</code> & <code>parameters</code></p>
+        <pre>
+function runSwitchStatement(num) {
+  console.log('Function runSwitchStatement(num)')
+  switch (num) {
+    case 1:
+      console.log('Happy first birthday!')
+      break;
+    case 2:
+      console.log('Happy second birthday!')
+      break;
+    case 3:
+    case 4:
+    case 5:
+      console.log('Happy Birthday!')
+      break;
+    default:
+      console.log('You\'re all grown up!')
+  }
+}</pre>
+        <button type="button" onclick="runSwitchStatement(1)">Click to run Code (pass '1' as parameter):</button>
+        <button type="button" onclick="runSwitchStatement(2)">Click to run Code (pass '2' as parameter):</button>
+        <button type="button" onclick="runSwitchStatement(4)">Click to run Code (pass '4' as parameter):</button>
+        <button type="button" onclick="runSwitchStatement(8)">Click to run Code (pass '8' as parameter):</button>
+        <div id="for_loop_output" class="output">
+          <!-- Intentionally left blank -->
+        </div>
+      </div>
+
+      <h3>Arrays</h3>
+      <div class="codeSection">
+        <h4>Defining and manipulating <code>arrays</code>:</h4>
+        <p>Also demonstrates <code>functions</code> , <code>parameters</code> & <code>loops</code></p>
+        <pre>
+function showSimpleArray() {
+  console.log('function showSimpleArray()')
+  var newArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  console.log(newArray)
+
+  newArray.push(11)
+  console.log('Pushed 11 to end of newArray')
+  console.log(newArray)
+
+  newArray.pop()
+  console.log('Popped last item from end of newArray')
+  console.log(newArray)
+
+  console.log('newArray includes 2 = ' + newArray.includes(2))
+  console.log('newArray includes 11 = ' + newArray.includes(11))
+
+  console.log('reverse newArray')
+  console.log(newArray.reverse())
+
+  newTextArray = ['Chris', 'Andy', 'Lindsay', 'Caleb', 'Tyler', 'Clara']
+  console.log('Created new array of strings')
+  console.log(newTextArray)
+
+  console.log('newTextArray is now Sorted')
+  console.log(newTextArray.sort())
+
+  console.log('return only a portion of the newTextArray')
+  console.log(newTextArray.slice(2,4))
+
+  console.log('loop through and array')
+  newTextArray.forEach(getName())
+}
+
+function getName(name, index) {
+  console.log(index + ", " + name)
+}</pre>
+        <button type="button" onclick="showSimpleArray()">Click to run Code:</button>
+        <div id="for_loop_output" class="output">
+          <!-- Intentionally left blank -->
+        </div>
+      </div>
+    </section>
+    <script src="js/topic1.js" async defer></script>
+  </body>
+</html>
