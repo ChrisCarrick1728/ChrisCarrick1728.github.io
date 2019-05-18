@@ -106,7 +106,16 @@ function getName(name, index) {
   console.log(index + ", " + name)
 }
 
-function showAssociativeArrays() {
-  console.log('function showAssociativeArrays()')
-  //var newArray = ['name':'']
+function runAssociativeArray() {
+  assocArray = {0: 'Chris', 1: 'William', 2: 'Carrick', 3:'07-06-1984'}
+  console.log(assocArray)
+  console.log('Full Name  : ' + assocArray[0] + ' ' + assocArray[1] + ' ' + assocArray[2])
+  console.log('Birth Date : ' + assocArray[3])
+}
+
+function runAssociativeArrayNamedKeys() {
+  assocArray = {'fName': 'Lindsay', 'mName': 'Hart', 'lName': 'Carrick', 'bDate': '04-06-1987'}
+  console.log(assocArray)
+  console.log('Full Name  : ' + assocArray['fName'] + ' ' + assocArray['mName'] + ' ' + assocArray['lName'])
+  console.log('Birth Date : ' + assocArray['bDate'])
 }

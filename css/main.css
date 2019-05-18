@@ -112,3 +112,11 @@ button:hover {
   border-bottom: 1px dashed #666;
   padding-top: 0px;
 }
+
+.output {
+  color: lightgreen;
+}
+
+label {
+  color: lightskyblue;
+}

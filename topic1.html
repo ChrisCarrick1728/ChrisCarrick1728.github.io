@@ -216,6 +216,52 @@ function getName(name, index) {
           <!-- Intentionally left blank -->
         </div>
       </div>
+
+      
+      <div class="codeSection">
+        <h4>Defining and manipulating <code>associative arrays</code>:</h4>
+        <p>Also demonstrates <code>functions</code> & <code>parameters</code></p>
+        <pre>
+function runAssociativeArray() {
+  assocArray = {0: 'Chris', 
+                1: 'William', 
+                3: 'Carrick', 
+                4:'07-06-1984'}
+  console.log(assocArray)
+  console.log('Full Name  : ' + 
+               assocArray[0] + ' ' + 
+               assocArray[1] + ' ' + 
+               assocArray[2])
+  console.log('Birth Date : ' + assocArray[4])
+  }
+}</pre>
+        <button type="button" onclick="runAssociativeArray()">Click to run Code:</button>
+        <div id="for_loop_output" class="output">
+          <!-- Intentionally left blank -->
+        </div>
+      </div>
+
+      <div class="codeSection">
+        <h4>Defining and manipulating <code>associative arrays</code> with named index:</h4>
+        <p>Also demonstrates <code>functions</code> & <code>parameters</code></p>
+        <pre>
+function runAssociativeArrayNamedKeys() {
+  assocArray = {'fName': 'Lindsay', 
+                'mName': 'Hart', 
+                'lName': 'Carrick', 
+                'bDate': '04-06-1987'}
+  console.log(assocArray)
+  console.log('Full Name  : ' + 
+               assocArray['fName'] + ' ' + 
+               assocArray['mName'] + ' ' + 
+               assocArray['lName'])
+  console.log('Birth Date : ' + assocArray['bdate'])
+}</pre>
+        <button type="button" onclick="runAssociativeArrayNamedKeys()">Click to run Code:</button>
+        <div id="for_loop_output" class="output">
+          <!-- Intentionally left blank -->
+        </div>
+      </div>
     </section>
     <script src="js/topic1.js" async defer></script>
   </body>
