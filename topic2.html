@@ -15,24 +15,35 @@
     <a href="index.html"><- Back to Home</a>
     <section id="list">
       <h2>Object Creation Functions, Inheritance, Properties, Methods, Instantiation</h2>
-      <p>Note: To see the code in acton, please open your console.</p>
-      <h3>!!!Not working yet!!!:</h3>
-
 
       <div class="codeSection">
         <h4>Object Creation Function:</h4>
-        <p> <code>functions</code> & <code>variables</code></p>
-        <p>Add a new food</p>
+        <p> Also demonstrates <code>functions</code> , <code>variables</code>, DOM Manipulation using: <code>createElement()</code> & <code>appendChild()</code></p>
         <form action="none">
-          <label for="name">Name a Meal</label>
-          <input type="text" name="name" id="name">
-          <div id="dropdown"></div>
-          <button type="button" onclick="addMeal()">Add Meal</button>
+          <label for="animalName" style="display:block">Enter an Animal Name:</label>
+          <input type="text" name="animalName" id="animalName" style="display:block">
+          <label for="type">Select Animal Type:</label>
+          <select name="type" id="type" style="display:block">
+            <option value=""></option>
+            <option value="Animal">Animal</option>
+            <option value="Pet">Pet</option>
+            <option value="WildAnimal">Wild Animal</option>
+            <option value="Meat">Meat</option>
+          </select>
+          <label for="type" id="Meat_label" style="display:none">What type of meat can you get from this animal?</label>
+          <input type="text" name="type" id="Meat_attr" style="display:none">
+          <label for="noise" id="Pet_label" style="display:none">What noise do this animal make?</label>
+          <input type="text" name="noise" id="Pet_attr" style="display:none">
+          <label for="habitat" id="WildAnimal_label" style="display:none">Where does this animal live?</label>
+          <input type="text" name="habitat" id="WildAnimal_attr" style="display:none">
+          <button type="button" id="addNewAnimal" style="display:block">Add Your Animal</button>
         </form>
-        <button type="button" onclick="getFoodItems()">Click To Get your List</button>
-        <div id="output" class="output">
+        <h3>Animal List:</h3>
+        <div id="animalList" class="output">
           <!-- Intentionally left blank -->
         </div>
+        <h3>Animal Output:</h3>
+        <div id="output"></div>
       </div>
       
 

@@ -120,3 +120,7 @@ button:hover {
 label {
   color: lightskyblue;
 }
+
+.animalButton {
+  margin: 10px;
+}
