@@ -41,7 +41,6 @@ animalList = []
 
 // Animal Creation factory
 function createAnimal(typeOfAnimal, name='None', noise='None', type='None', habitat='None') {
-  console.log(animalList)
   if (typeOfAnimal == 'Animal') {
     let a = new Animal(name)
     animalList.push(a)
