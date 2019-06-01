@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chris Carrick CIT - 261 Portfolio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header>
+      <h1>Chris Carrick – CIT 261 Porfolio</h1>
+    </header>
+    <a href="index.html"><- Back to Home</a>
+    <section id="list">
+      <h2>HTML5 Tags - Video, Audio, and Canvas</h2>
+      <h3>Video</h3>
+
+      <div class="codeSection">
+        <video width="580" id="video">
+          <source src="assets/Trailer.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <h3>Audio</h3>
+
+      <div class="codeSection">
+        <audio src="assets/BeforeDawn.mp3" id="audio" type="audio/mpeg"></audio>
+      </div>
+
+      <h3>Canvas</h3>
+
+      <div class="codeSection">
+        <div id="canvasControls">
+          <button type="button" onclick="myCanvas.currentFunc='drawLine'">Line</button>
+          <button type="button" onclick="myCanvas.currentFunc='drawCircle'">Circle</button>
+          <button type="button" onclick="myCanvas.currentFunc='drawRectangle'">Rectangle</button>
+          <button type="button" onclick="myCanvas.currentFunc='drawPen'">Pen</button></br>
+          <label for="stroke">Stroke Width:</label>
+          <input type="text" name="stroke" id="stroke" maxlength="1" style="width:40px">
+          <label for="strokeColor">Stroke Color:</label>
+          <input type="color" name="strokeColor" id="strokeColor">
+          <label for="fillColor">Fill Color:</label>
+          <input type="color" name="fillColor" id="fillColor">
+        </div>
+        <canvas id="canvas" width="580" height="300px"></canvas>
+      </div>
+    </section>
+    <script src="js/topic10.js" async defer></script>
+  </body>
+</html>

@@ -42,6 +42,7 @@ h3 {
   padding-bottom: 5px;
   border-bottom: 1px solid #ccc;
   margin: 0px;
+  margin-bottom: 20px;
 }
 
 h4 {
@@ -123,4 +124,13 @@ label {
 
 .animalButton {
   margin: 10px;
+}
+
+canvas {
+  background-color: white;
+  border:5px solid #000;
+}
+
+canvas:hover {
+  cursor: crosshair;
 }
