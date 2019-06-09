@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chris Carrick CIT - 261 Portfolio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header>
+      <h1>Chris Carrick – CIT 261 Porfolio</h1>
+    </header>
+    <a href="index.html"><- Back to Home</a>
+    <section id="list">
+      <h2>Local Storage API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects</h2>
+      <button type="button" id="clearLocalStorage">Clear Local Storage</button>
+      <h3>Save an Object to Local Storage</h3>
+      <div class="codeSection">
+        <h4>Object Creation Function:</h4>
+        <p> Also demonstrates <code>functions</code> , <code>variables</code>, DOM Manipulation using: <code>createElement()</code> & <code>appendChild()</code></p>
+        <form action="none">
+          <label for="animalName" style="display:block">Enter an Animal Name:</label>
+          <input type="text" name="animalName" id="animalName" style="display:block">
+          <label for="type">Select Animal Type:</label>
+          <select name="type" id="type" style="display:block">
+            <option value=""></option>
+            <option value="Animal">Animal</option>
+            <option value="Pet">Pet</option>
+            <option value="WildAnimal">Wild Animal</option>
+            <option value="Meat">Meat</option>
+          </select>
+          <label for="type" id="Meat_label" style="display:none">What type of meat can you get from this animal?</label>
+          <input type="text" name="type" id="Meat_attr" style="display:none">
+          <label for="noise" id="Pet_label" style="display:none">What noise does this animal make?</label>
+          <input type="text" name="noise" id="Pet_attr" style="display:none">
+          <label for="habitat" id="WildAnimal_label" style="display:none">Where does this animal live?</label>
+          <input type="text" name="habitat" id="WildAnimal_attr" style="display:none">
+          <button type="button" id="addNewAnimal" style="display:block">Add Your Animal</button>
+          
+        </form>
+        <h4>Animal List:</h4>
+        <div id="animalList" class="output">
+          <!-- Intentionally left blank -->
+        </div>
+        <h4>Animal Output:</h4>
+        <div id="output"></div>
+      </div>
+
+      <h3>Add and retrieve Simple Data</h3>
+      <div class="codeSection">
+        <label for="simpleName">Enter Your Name:</label>
+        <input type="text" id="simpleName">
+        <button type="button" id="simpleDataButton">Save to Local Storage</button>
+        <div id="simpleData"></div>
+      </div>
+
+      <h3>Add and retrieve an Array</h3>
+      <div class="codeSection">
+        <label for="simpleArray">Enter a fruit name</label>
+        <input type="text" name="simpleArray" id="simpleArray">
+        <button type="button" id="simpleArrayButton">Add fruit to array</button>
+        <button type="button" id="simpleArrayToLocalStorage">Add array to Local Storage</button>
+        <div id="simpleArrayDiv"><!--Purposely left blank--></div>
+      </div>
+
+      <h3>Add and retrieve an Associative Array</h3>
+      <div class="codeSection">
+        <label for="fruitName">Enter a fruit name</label>
+        <input type="text" name="fruitName" id="fruitName"></br>
+        <label for="fruitNum">How many do you have?</label>
+        <input type="text" name="fruitNum" id="fruitNum">
+        <button type="button" id="associativeArrayButton">Add fruit to Associative Array</button>
+        <button type="button" id="associativeArrayToLocalStorage">Add Associative Array to Local Storage</button>
+        <div id="associativeArrayDiv"><!--Purposely left blank--></div>
+      </div>
+      
+    </section>
+    <script src="js/topic5.js" async defer></script>
+  </body>
+</html>
