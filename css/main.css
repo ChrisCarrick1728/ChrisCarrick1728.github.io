@@ -134,3 +134,11 @@ canvas {
 canvas:hover {
   cursor: crosshair;
 }
+
+.changeMe {
+  width: 540px;
+  height: 300px;
+  border: 1px solid lightcoral;
+  margin: 20px 0px;
+  padding: 10px 20px;
+}

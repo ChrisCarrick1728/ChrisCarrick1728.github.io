@@ -1,0 +1,36 @@
+.runAwayButton {
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  border: 3px solid lightcoral;
+  position: relative;
+  animation: 1s infinite ease-in-out;
+  animation-delay: .3s;
+  animation-name: runAwayRight;
+  animation-play-state: paused;
+}
+
+.play {
+  animation-play-state: running;  
+}
+
+@keyframes runAwayRight {
+  0%  {left: 0px; top:0px}
+  25% {left: 400px; top: 500px; transform: rotate(720deg)}
+  50% {left: 0px; top: 500px; transform: rotate(0deg)}
+  75% {left: 400px; top: 0px; transform: rotate(720deg)}
+  100%{left: 0px;  top: 0px; transform: rotate(0deg)}
+}
+
+.changeMeGrow {
+  transition: width 2s, height 2s;
+}
+
+.changeMeGrow:hover {
+  width: 650px;
+  height: 350px;
+  font-size: 10vw;
+}
+
+
