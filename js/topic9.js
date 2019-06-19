@@ -32,5 +32,12 @@ runAwayButton.addEventListener('touchcancel', function() {
   runAwayButton.classList.toggle('play')
 })
 
+smallDiv.addEventListener('touchstart', function() {
+  smallDiv.classList.toggle('hover_event')
+})
+
+smallDiv.addEventListener('touchend', function() {
+  smallDiv.classList.toggle('hover_event')
+})
 
 
