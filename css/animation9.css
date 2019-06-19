@@ -1,0 +1,44 @@
+.runAwayButton {
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  border: 3px solid lightcoral;
+  position: relative;
+  animation: 1s infinite ease-in-out;
+  animation-delay: .3s;
+  animation-name: runAwayRight;
+  animation-play-state: paused;
+}
+
+.play {
+  animation-play-state: running;  
+}
+
+@keyframes runAwayRight {
+  0%  {left: 0px; top:0px}
+  25% {left: 0px; top: 300px; transform: rotate(30deg)}
+  50% {left: 0px; top: 250px; transform: rotate(-60deg)}
+  75% {left: 0px; top: 350px; transform: rotate(30deg)}
+  100%{left: 0px; top: 0px; transform: rotate(0deg)}
+}
+
+.smallDiv {
+  max-width: 60%;  
+  margin: 30px auto 20px;
+  padding: 10px 20px;
+  border: 1px solid lightcoral;
+  color: white;
+}
+
+.smallDivGrow {
+  transition: max-width 2s, font-size 2s;
+}
+
+.smallDivGrow:hover { 
+  max-width: 80%;
+  font-size: 10vw;
+}
+
+
+

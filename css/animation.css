@@ -23,6 +23,14 @@
   100%{left: 0px;  top: 0px; transform: rotate(0deg)}
 }
 
+.changeMe {
+  width: 540px;
+  height: 300px;
+  border: 1px solid lightcoral;
+  margin: 20px 0px;
+  padding: 10px 20px;
+}
+
 .changeMeGrow {
   transition: width 2s, height 2s;
 }

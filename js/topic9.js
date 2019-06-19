@@ -4,10 +4,15 @@
 
 // Define Vars
 let runAwayButton = document.getElementById('runAwayButton')
+let smallDiv = document.getElementById('smallDiv')
 
 // Define Event listeners
+runAwayButton.addEventListener('touchstart', function() {
+  // Start the animation when the mouse enters the element
+  runAwayButton.classList.toggle('play')
+})
 
-runAwayButton.addEventListener('mouseenter', function() {
+runAwayButton.addEventListener('mouseover', function() {
   // Start the animation when the mouse enters the element
   runAwayButton.classList.toggle('play')
 })
@@ -17,7 +22,15 @@ runAwayButton.addEventListener('mouseout', function() {
   runAwayButton.classList.toggle('play')
 })
 
-runAwayButton.addEventListener('click', function() {
-  // Event listener to see if you were able to click on the moving button.
-  alert('You Caught me!!!')
+runAwayButton.addEventListener('touchend', function() {
+  // Stop the animation when the mouse enters the element
+  runAwayButton.classList.toggle('play')
 })
+
+runAwayButton.addEventListener('touchcancel', function() {
+  // Stop the animation when the mouse enters the element
+  runAwayButton.classList.toggle('play')
+})
+
+
+
