@@ -1,0 +1,79 @@
+.bouncingDivContainer {
+  position: relative;
+  height: 400px;
+  cursor: not-allowed;
+}
+.bouncingDiv {
+  width: 200px;
+  height: 200px;
+  border: none;
+  border-radius: 100%;
+  background-color: lightseagreen;
+  position: absolute;
+  animation: 1.5s infinite linear;
+  animation-name: bounceUpAndDown;
+  animation-play-state: running;
+  background: radial-gradient(circle at 150px 140px, lightseagreen, #000);
+  transform: rotate(180deg);
+  filter: blur(1px);
+}
+
+@keyframes bounceUpAndDown {
+  0%  {top: 0px;   left: 0px;}
+  40% {top: 150px; left: 20px; height: 220px; width: 180px;}
+  50% {top: 220px; left: 0px;  height: 150px; width: 220px;}
+  96% {top: 0px;   left: 0px;  height: 200px; width: 200px;}
+  100%{            left: 0px;  height: 200px; width: 200px;}
+}
+
+.shadowDiv {
+  width: 300px;
+  height: 180px;
+  border-radius: 100%;
+  filter: blur(30px);
+  background-color: #222;
+  transform: rotate(-20deg);
+  position: absolute;
+  z-index: -1;
+  animation: 1.5s infinite linear;
+  animation-name: shadow;
+  animation-play-state: running;
+  top: 180px;
+  left: 300px;
+}
+
+@keyframes shadow {
+  0%  {top: 180px; left: 300px;}
+  40% {top: 220px; left: -30px; filter: blur(3px); transform: scale(0.7)}
+  50% {top: 220px; left: -30px;}
+  96% {top: 180px; left: 300px;}
+  100%{top: 180px; left: 300px;}
+}
+
+.smallDiv { 
+  width: 10%;
+  margin: 30px auto 20px;
+  padding: 10px 20px;
+  border: 3px solid lightcoral;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+  filter: blur(0.07rem);
+  box-shadow: 5px 3px 0px #222;
+  cursor: pointer;
+}
+
+.smallDivGrow {
+  transition: width 2s, font-size 2s, filter 2s, box-shadow 2s;
+  
+}
+
+.smallDivGrow:hover, .smallDivGrow.hover_event { 
+  font-size: 2vw;
+  filter: blur(0rem);
+  width: 30%;
+  box-shadow: 20px 15px 10px #222;
+}
+
+
+
